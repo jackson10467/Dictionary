@@ -1,20 +1,28 @@
 #Hangman#
-The API I plan on using is the WordsAPI, to create a hangman game. The twist here being that inplace of a "man" getting hanged
-, elements on the page would start disappearing. 
-Some goals would be a splash page that leads to the game, along with a page for the rules of hangman. 
-The main functionality on this page would be the hangman game, featuring visual feedback on the user's guesses ie:
-Correct guesses, already guessed letters, failed guesses. 
+The API I plan on using is the WordsAPI, to create a working dictionary.
+
+Some goals would be a splash page that leads to the dictionary. 
+The main functionality on this page would be the dictionary, featuring visual feedback on the user's input. I would also like a random word to be displayed everytime the page loads. This project is pretty self explanatory
 
 MVP Goals:
-- Working HTML,CSS, JS : I expect getting the game to work will take up more than 2 days, CSS would take up the rest of the time
-- Pulling data from Words API using Axios: Pulling random words from the words API is essential in getting Hangman working.
-- Responsive design: This is the most difficult part for me, as I'm not currently sure how I would translate elements disappearing
-on mobile devices, or if it would look good enough. Preferably, I would create a traditional hangman game first to make sure it's working.
+- Working HTML,CSS, JS : I expect getting the dictionary functionality working relatively soon
+- Pulling data from Words API using Axios: Pulling random words from the words API is essential in getting this working
+- Responsive design: This is the most difficult part for me, as I'm not currently sure how I would get this styled in time. Preferably, I would create a traditional page first to make sure it works
 
 Post MVP: 
-- Get the disappearing elements to work, either on mobile, desktop, or both. (Might have to resort to traditional hangman if not enough time)
-- Adding categories of words for the user to choose from
+- Get hangman to remove elements of the page
+- Add hangman to the page 
+- Adding categories of words for the user to choose from for hangman
 - Fancy CSS Animations
+- SECOND API that does urban dictionary definitions; Dictionary After Dark
 
 Wireframes:
+Splashscreen:  https://wireframe.cc/P2u1aU
+
+Main Page Desktop: https://wireframe.cc/UNbEbC
+
+MOBILE: https://wireframe.cc/0MBAfp
+
+
+
 
