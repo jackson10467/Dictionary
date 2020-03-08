@@ -1,4 +1,4 @@
-#Hangman#
+
 The API I plan on using is the WordsAPI, to create a working dictionary.
 
 Some goals would be a splash page that leads to the dictionary. 
