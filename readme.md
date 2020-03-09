@@ -19,7 +19,7 @@ Post MVP:
 Splashscreen:
 ![splashscreen](https://imgur.com/u8uQcrk).jpg
 Desktop:
-![Desktop](https://imgur.com/YV1jYSc).jpg
+![Desktop](https://i.imgur.com/Vd54Jdv).jpg
 Mobile:
 ![Mobile](https://imgur.com/Vd54Jdv).jpg
 
