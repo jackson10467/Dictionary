@@ -5,11 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script defer src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script defer src="script.js"></script>
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    
+    <title>Dictionary/+</title>
   </head>
   <body>
-    <div class="word"></div>
+    <header>
+      <nav>
+        <a href="index.html"><img src="logo.png" alt="logo"/></a>
+        <a href=#Dictionary>Dictionary</a>
+        <a href=#WordofTheDay>Word of the Day</a>
+        <a href=#MoreResources>More Info</a>
+      </nav>
+    </header>
+    
+    <div id="body-container">
+    <img src ="books.jpg"/>
+    <h2>Word of the Day</h2>
+    
+    <h1>Define a Word:</h1>
     <input type="text" id="input" placeholder="Search here"></input>
-    <button class="button">Test</button>
+    <button class="button">Submit</button>
+    
+    <div class="word">Word Goes here</div>
+    
+    <div class="definitions">Definitions</div>
+    <!-- <ul>
+      <li></li>
+      <li></li>
+      <li></li>  Make List using DOM looping through length
+      of definition array
+      <li></li>
+    </ul> -->
+  </div>
+
+  <footer>
+    <h2>Jackson Vu &copy; 2020</h2>
+  </footer>
   </body>
 </html>
