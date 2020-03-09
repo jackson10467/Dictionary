@@ -16,12 +16,13 @@ Post MVP:
 - Fancy CSS Animations
 - SECOND API that does urban dictionary definitions; Dictionary After Dark
 
-Wireframes:
-Splashscreen:  https://wireframe.cc/P2u1aU
+Splashscreen:
+![splashscreen](https://imgur.com/u8uQcrk).jpg
+Desktop:
+![Desktop](https://imgur.com/YV1jYSc).jpg
+Mobile:
+![Mobile](https://imgur.com/Vd54Jdv).jpg
 
-Main Page Desktop: https://wireframe.cc/UNbEbC
-
-MOBILE: https://wireframe.cc/0MBAfp
 
 
 
