@@ -1,6 +1,6 @@
 const apiKey = "1213f19772msha8236f6e8356a42p1f62d3jsndb481029ea07";
 
-let div = document.querySelector(".word");
+let SearchWord = document.querySelector(".word");
 const button = document.querySelector(".button");
 
 //------TEST CODE DELETE LATER----------
@@ -40,7 +40,7 @@ const wordDay = async () => {
       hasDetails: "definitions"
     }
   });
-  
+
   let word = wotdData.data.word;
   wotd.innerHTML = word + ":";
 
@@ -65,6 +65,7 @@ button.addEventListener("click", async () => {
       "x-rapidapi-key": "1213f19772msha8236f6e8356a42p1f62d3jsndb481029ea07"
     }
   });
-
+  let word = response.data.word;
+  SearchWord.innerHTML = word;
   console.log(response);
 });

@@ -110,11 +110,13 @@ nav a:hover {
 
 .word{
 margin-top:10%;
-
+text-transform: capitalize;
+font-size:4em;
+left:
 }
 
 .definitions{
-
+margin-top:5%;
 }
 
 
