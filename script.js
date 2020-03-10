@@ -2,7 +2,7 @@ const apiKey = "1213f19772msha8236f6e8356a42p1f62d3jsndb481029ea07";
 
 let div = document.querySelector(".word");
 const button = document.querySelector(".button");
-let wotd = document.querySelector(".wotd");
+
 
 // button.addEventListener("click", async () => {
 //   const response = await axios({
@@ -23,6 +23,9 @@ let wotd = document.querySelector(".wotd");
 // })//RapidAPI gave me this code block ) =
 
 const wordDay = async () => {
+  let wotd = document.querySelector(".wotd");
+  let wotdInfo = document.querySelector(".wotd-info")
+  
   let wotdData = await axios({
     method: "GET",
     url: "https://wordsapiv1.p.rapidapi.com/words/",
@@ -32,10 +35,17 @@ const wordDay = async () => {
       "x-rapidapi-key": "1213f19772msha8236f6e8356a42p1f62d3jsndb481029ea07"
     },
     params: {
-      random: "true"
+      random: "true",
+      hasDetails: "definitions"
     }
   });
+  let word = (wotdData.data.word);
+  wotd.innerHTML = word + ":";
+  
+  let wordData = (wotdData.data.results[0].definition);
   console.log(wotdData);
+  
+  wotdInfo.innerHTML = wordData;
 };
 
 button.addEventListener("click", async () => {
