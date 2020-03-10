@@ -125,6 +125,7 @@ nav a:hover {
   line-height: 1em;
   background-color: #929A97;
   margin-right:10%;
+  box-shadow: 10px 10px 20px #828077;
 }
 .title{
   font-size:2em;
@@ -155,7 +156,7 @@ footer h2 {
 
 /* SPLASHSCREEN CSS */
 
-/* Code from W3 schools, adapated for the this project */
+/* Centering Code from W3 schools, adapated for the this project */
 .splashContainer {
   text-align: center;
   color: white;
