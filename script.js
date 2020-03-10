@@ -67,16 +67,25 @@ button.addEventListener("click", async () => {
     }
   });
   let word = response.data.word;
-  let def = response.data.results
+  
   SearchWord.innerHTML = word;
   console.log(response);
 
+  let title = document.createElement("h2");
+  title.innerHTML = "Definitions";
+  title.className = "title";
+  
+  definitions.appendChild(title);
+
   for (i = 0; i <= response.data.definitions.length; i++){
-    let item = document.createElement("li");
-    item.innerHTML = response.data.definitions[i].definition;
+    let item = document.createElement("div");
+    item.className = "defines";
+    item.innerHTML = `${i+1}) ` + response.data.definitions[i].definition;
     definitions.appendChild(item);
+    // definitions.innerHTML = ""; 
   }
   
+
 
 
 });

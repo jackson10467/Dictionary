@@ -97,34 +97,50 @@ nav a:hover {
   padding: 1em;
   margin: 2vh;
   font-family: "Montserrat", sans-serif;
+  text-align: center;
 }
 
 #body-container button {
   width: 10%;
   height: 40%;
+  margin-top:5vh;
   background-color: #61a965;
   color: white;
   padding: 1em;
   font-family: "Montserrat", sans-serif;
 }
 
-.word{
-margin-top:10%;
-text-transform: capitalize;
-font-size:4em;
+.word {
+  margin-top: 10%;
+  text-transform: capitalize;
+  font-size: 4em;
 }
 
-.definitions{
-margin-top:5%;
+.definitions {
+  margin-top: 5%;
+  margin-left: 10%;
+  list-style-type: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  line-height: 1em;
+}
+.title{
+  font-size:2em;
 }
 
+.defines {
+  margin: 3em;
+  line-height: 2em;
+  font-size:1em;
+
+}
 
 footer {
   display: flex;
   justify-content: center;
   margin-top: 100vh;
   background-color: #828077;
-  height: 10vh;
+  height: 18vh;
   text-align: center;
   align-items: center;
 }
@@ -155,7 +171,7 @@ footer h2 {
   opacity: 1;
 }
 
-#wotdHead{
+#wotdHead {
   position: absolute;
   top: 20%;
   left: 50%;
@@ -182,7 +198,6 @@ footer h2 {
   left: 50%;
   transform: translate(-50%, -50%);
   opacity: 1;
-  
 }
 
 .centered button {
