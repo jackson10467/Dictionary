@@ -143,22 +143,34 @@ footer h2 {
   opacity: 1;
 }
 
-.wotd {
+#wotdHead{
   position: absolute;
   top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+  font-weight: bolder;
+}
+
+.wotd {
+  position: absolute;
+  top: 35%;
   left: 30%;
   transform: translate(-50%, -50%);
   opacity: 1;
-  font-style: italic;
+  font-style: oblique;
   font-weight: bolder;
+  font-family: "Raleway", sans-serif;
+  text-transform: capitalize;
 }
 
 .wotd-info {
   position: absolute;
-  top: 40%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   opacity: 1;
+  
 }
 
 .centered button {
