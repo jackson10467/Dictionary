@@ -10,11 +10,13 @@
     
     <title>Dictionary/+</title>
   </head>
-  <body>
+  <body onload="wordDay()">
 <div id="body-container">
-    <img id="hero" src ="books.jpg"/>
-    <h2>Word of the Day</h2>
-    
+  <div id = "wotd">
+  </div>    
+  <div id= "wotd-text">
+    <h2 class = "wotd"></h2>
+  </div>  
     <header>
       <nav>
         <a href="index.html"><img src="logo.png" alt="logo"/></a>
@@ -26,7 +28,6 @@
     <h1>Define a Word:</h1>
     <input type="text" id="input" placeholder="Search here"></input>
     <button class="button">Submit</button>
-    
     <div class="word">Word Goes here</div>
     
     <div class="definitions">Definitions</div>
