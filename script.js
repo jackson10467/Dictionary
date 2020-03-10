@@ -77,15 +77,19 @@ button.addEventListener("click", async () => {
   
   definitions.appendChild(title);
 
+  definitions.innerHTML = ""; //This allows the search function to be used more than once
+
+  
   for (i = 0; i <= response.data.definitions.length; i++){
     let item = document.createElement("div");
     item.className = "defines";
     item.innerHTML = `${i+1}) ` + response.data.definitions[i].definition;
     definitions.appendChild(item);
-    // definitions.innerHTML = ""; 
+  // shows definitions along with numbered list, for clarity
   }
   
 
 
 
 });
+//------------------------------------------------------------------//
