@@ -123,6 +123,8 @@ nav a:hover {
   text-decoration: none;
   text-transform: capitalize;
   line-height: 1em;
+  background-color: #929A97;
+  margin-right:10%;
 }
 .title{
   font-size:2em;
@@ -132,6 +134,7 @@ nav a:hover {
   margin: 3em;
   line-height: 2em;
   font-size:1em;
+
 
 }
 
