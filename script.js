@@ -71,14 +71,12 @@ button.addEventListener("click", async () => {
   SearchWord.innerHTML = word;
   console.log(response);
 
+  definitions.innerHTML = ""; //This allows the search function to be used more than once
   let title = document.createElement("h2");
   title.innerHTML = "Definitions";
   title.className = "title";
   
   definitions.appendChild(title);
-
-  definitions.innerHTML = ""; //This allows the search function to be used more than once
-
   
   for (i = 0; i <= response.data.definitions.length; i++){
     let item = document.createElement("div");
@@ -93,3 +91,9 @@ button.addEventListener("click", async () => {
 
 });
 //------------------------------------------------------------------//
+
+
+/// Code to get list
+// - list ConvolverNod
+// hound
+// 
