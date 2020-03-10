@@ -4,6 +4,9 @@
   margin: 0;
   padding: 0;
 }
+html{
+  scroll-behavior: smooth;
+}
 /* BEGIN CSS */
 body {
   /* padding-top: 120px; */
@@ -47,6 +50,7 @@ nav a {
   font-weight: 25;
   border: 2px;
   border-color: transparent;
+  transition: background-color 0.3s;
 }
 
 nav a:hover {
@@ -97,12 +101,17 @@ nav a:hover {
 }
 
 #body-container input {
-  width: 30%;
+  width: 20%;
   height: 60%;
   padding: 1em;
   margin: 2vh;
   font-family: "Montserrat", sans-serif;
   text-align: center;
+  transition: width 0.3s;
+}
+
+#body-container input:focus {
+width:30%;
 }
 
 #body-container button {
@@ -113,10 +122,11 @@ nav a:hover {
   color: white;
   padding: 1em;
   font-family: "Montserrat", sans-serif;
+
 }
 
 #body-container button:hover {
-  background-color:#61a965;
+  background-color:#5b9756;
   color: white;
 }
 
@@ -128,6 +138,8 @@ nav a:hover {
   margin-top: 10%;
   text-transform: capitalize;
   font-size: 4em;
+  color: #5b9756;
+
 }
 
 .definitions {
@@ -141,10 +153,12 @@ nav a:hover {
   margin-right: 10%;
   box-shadow: 10px 10px 20px #828077;
   color: black;
+  transition: width 0.2s height 0.2s;
 }
 .title {
   text-align: center;
   margin-top: 10%;
+  color:#f44336
 }
 
 .defines {
@@ -241,13 +255,17 @@ footer h2 {
   }
 
   #body-container input {
-    width: 80%;
+    width: 70%;
     height: 60%;
     padding: 1em;
     margin: 2vh;
     font-family: "Montserrat", sans-serif;
     text-align: center;
   }
+
+  #body-container input:focus {
+    width:80%;
+    }    
   footer {
   height: 25vh;
   }
