@@ -12,6 +12,7 @@ body {
   font-family: "Montserrat", sans-serif;
   /* font-family: "Raleway", sans-serif; */
   color: white;
+  height: 100%;
 }
 header {
   width: 100%;
@@ -58,9 +59,8 @@ nav a:hover {
 #wotd {
   background-image: url("books.jpg");
   width: 100%;
-  height: 90vh;
   opacity: 0.2;
-  
+  height: 90vh;
 }
 
 #wotd-text {
@@ -68,6 +68,8 @@ nav a:hover {
   justify-content: center;
   align-items: center;
   text-align: center;
+  background-color: #929A97;
+  text-transform: capitalize;
 }
 
 #body-container {
@@ -223,4 +225,18 @@ footer h2 {
   nav a {
     font-size: 0.8em;
   }
+  #body-container button {
+    width: 20%;
+    height: 40%;
+  }
+
+  #body-container input {
+    width: 80%;
+    height: 60%;
+    padding: 1em;
+    margin: 2vh;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+  
+}
 }
