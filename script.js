@@ -3,6 +3,7 @@ const apiKey = "1213f19772msha8236f6e8356a42p1f62d3jsndb481029ea07";
 let div = document.querySelector(".word");
 const button = document.querySelector(".button");
 
+//------TEST CODE DELETE LATER----------
 // button.addEventListener("click", async () => {
 //   const response = await axios({
 //     "method": "GET",
@@ -21,6 +22,7 @@ const button = document.querySelector(".button");
 //     console.log(response);
 // })//RapidAPI gave me this code block ) =
 
+//--------------RANDOM WORD FUNCTION-------------
 const wordDay = async () => {
   let wotd = document.querySelector(".wotd");
   let wotdInfo = document.querySelector(".wotd-info");
@@ -38,6 +40,7 @@ const wordDay = async () => {
       hasDetails: "definitions"
     }
   });
+  
   let word = wotdData.data.word;
   wotd.innerHTML = word + ":";
 
@@ -46,7 +49,9 @@ const wordDay = async () => {
 
   wotdInfo.innerHTML = wordData;
 };
+//------------UNCOMMENT OUT WHEN READY, SAVES API CALLS----------------------
 
+//-------------------SEARCH FUNCTION---------------------
 button.addEventListener("click", async () => {
   const input = document.querySelector("input").value;
   console.log(input);

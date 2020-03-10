@@ -107,11 +107,22 @@ nav a:hover {
   padding: 1em;
   font-family: "Montserrat", sans-serif;
 }
+
+.word{
+margin-top:10%;
+
+}
+
+.definitions{
+
+}
+
+
 footer {
   display: flex;
   justify-content: center;
   margin-top: 100vh;
-  background-color: #929a97;
+  background-color: #828077;
   height: 10vh;
   text-align: center;
   align-items: center;
@@ -166,7 +177,7 @@ footer h2 {
 
 .wotd-info {
   position: absolute;
-  top: 45%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
   opacity: 1;
