@@ -61,6 +61,7 @@ nav a:hover {
   width: 100%;
   opacity: 0.2;
   height: 90vh;
+  background-attachment: fixed;
 }
 
 #wotd-text {
@@ -68,7 +69,7 @@ nav a:hover {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: #929A97;
+  background-color: #929a97;
   text-transform: capitalize;
 }
 
@@ -108,10 +109,19 @@ nav a:hover {
   width: 10%;
   height: 40%;
   margin-top: 5vh;
-  background-color: #61a965;
+  background-color: #f44336;
   color: white;
   padding: 1em;
   font-family: "Montserrat", sans-serif;
+}
+
+#body-container button:hover {
+  background-color:#61a965;
+  color: white;
+}
+
+#body-container button:focus {
+  outline: 0;
 }
 
 .word {
@@ -237,6 +247,5 @@ footer h2 {
     margin: 2vh;
     font-family: "Montserrat", sans-serif;
     text-align: center;
-  
-}
+  }
 }
