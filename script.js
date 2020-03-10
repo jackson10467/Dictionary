@@ -1,6 +1,7 @@
 const apiKey = "1213f19772msha8236f6e8356a42p1f62d3jsndb481029ea07";
 
 let SearchWord = document.querySelector(".word");
+let definitions = document.querySelector(".definitions");
 const button = document.querySelector(".button");
 
 //------TEST CODE DELETE LATER----------
@@ -66,6 +67,16 @@ button.addEventListener("click", async () => {
     }
   });
   let word = response.data.word;
+  let def = response.data.results
   SearchWord.innerHTML = word;
   console.log(response);
+
+  for (i = 0; i <= response.data.definitions.length; i++){
+    let item = document.createElement("li");
+    item.innerHTML = response.data.definitions[i].definition;
+    definitions.appendChild(item);
+  }
+  
+
+
 });
