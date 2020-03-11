@@ -126,7 +126,7 @@ button2.addEventListener("click", async () => {
   for (i = 0; i < response.data.synonyms.length; i++){
     let item = document.createElement("div");
     item.className = "syns";
-    item.innerHTML = `${i+1}) ` + response.data.synonyms[i];
+    item.innerHTML =  response.data.synonyms[i];
     thesaurus.appendChild(item);
   // shows definitions along with numbered list, for clarity
   }

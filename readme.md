@@ -10,7 +10,7 @@ MVP Goals:
 - Responsive design: This is the most difficult part for me, as I'm not currently sure how I would get this styled in time. Preferably, I would create a traditional page first to make sure it works
 
 Post MVP:
-
+- Add Thesaurus for Synonyms + Antonyms
 - Get hangman to remove elements of the page
 - Add hangman to the page
 - Adding categories of words for the user to choose from for hangman

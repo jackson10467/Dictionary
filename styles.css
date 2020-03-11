@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
 }
-html{
+html {
   scroll-behavior: smooth;
 }
 /* BEGIN CSS */
@@ -111,7 +111,7 @@ nav a:hover {
 }
 
 #body-container input:focus {
-width:30%;
+  width: 30%;
 }
 
 /* #body-container button {
@@ -124,7 +124,7 @@ width:30%;
   font-family: "Montserrat", sans-serif;
 } */
 
-#defBut{
+#defBut {
   width: 10%;
   height: 40%;
   margin-top: 5vh;
@@ -135,7 +135,7 @@ width:30%;
 }
 
 #body-container button:hover {
-  background-color:#5b9756;
+  background-color: #5b9756;
   color: white;
 }
 
@@ -148,7 +148,6 @@ width:30%;
   text-transform: capitalize;
   font-size: 4em;
   color: #5b9756;
-
 }
 
 .definitions {
@@ -168,7 +167,7 @@ width:30%;
 .title {
   text-align: center;
   margin-top: 10%;
-  color:#f44336
+  color: #f44336;
 }
 
 .defines {
@@ -177,23 +176,23 @@ width:30%;
   font-size: 1em;
 }
 
-.imgbreak{
-    background-image: url("books.jpg");
-    width: 100%;
-    opacity: 0.2;
-    height: 35vh;
-    background-attachment: fixed;
-  }
-
-.thesaurus-container{
-  display:flex;
-  width:100%;
-  justify-content: center;
-  align-items: center;
-  margin:0;
+.imgbreak {
+  background-image: url("books.jpg");
+  width: 100%;
+  opacity: 0.2;
+  height: 35vh;
+  background-attachment: fixed;
 }
 
-.thesaurus-container input{
+.thesaurus-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.thesaurus-container input {
   width: 20%;
   height: 60%;
   padding: 1em;
@@ -212,17 +211,24 @@ width:30%;
 }
 
 .thesaurus-container button:hover {
-  background-color:#5b9756;
+  background-color: #5b9756;
   color: white;
 }
 
 .thesaurus-container button:focus {
   outline: 0;
 }
-
-.thesaurus{
+.TheWord {
+  margin-top: 10%;
+  text-transform: capitalize;
+  font-size: 4em;
+  color: #5b9756;
+}
+.syn-ant {
   margin-top: 5%;
   margin-left: 10%;
+  min-width: 40vw;
+  text-align: center;
   list-style-type: none;
   text-decoration: none;
   text-transform: capitalize;
@@ -233,28 +239,16 @@ width:30%;
   color: black;
   transition: width 0.2s height 0.2s;
 }
-
-.syn-ant{
-  margin-top: 5%;
-  margin-left: 10%;
-  list-style-type: none;
-  text-decoration: none;
-  text-transform: capitalize;
+.syns {
+  margin: 2em;
   line-height: 1em;
-  background-color: #f4f3ef;
-  margin-right: 10%;
-  box-shadow: 10px 10px 20px #828077;
-  color: black;
-  transition: width 0.2s height 0.2s;
-}
-.syns{
-  margin: 3em;
-  line-height: 2em;
   font-size: 1em;
+  flex: 1;
+  text-align: center;
 }
 
 footer {
-  margin-top:20vh;
+  margin-top: 20vh;
   display: flex;
   justify-content: center;
   background-color: #828077;
@@ -331,10 +325,13 @@ footer h2 {
   display: inline-block;
   font-size: 14px;
 }
-
+/* MEDIA QUERY */
 @media only screen and (max-width: 600px) {
+  #wotd-text {
+    margin-left: 5%;
+  }
   nav a {
-    font-size: 0.8em;
+    font-size: 0.5em;
   }
   #body-container button {
     width: 20%;
@@ -351,12 +348,12 @@ footer h2 {
   }
 
   #body-container input:focus {
-    width:80%;
-    }    
-  footer {
-  height: 25vh;
+    width: 80%;
   }
-  
+  footer {
+    height: 25vh;
+  }
+
   footer h2 {
     color: white;
     text-align: center;
