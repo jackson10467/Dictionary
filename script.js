@@ -1,8 +1,12 @@
 const apiKey = "1213f19772msha8236f6e8356a42p1f62d3jsndb481029ea07";
 
 let SearchWord = document.querySelector(".word");
+let theWord = document.querySelector(".TheWord")
 let definitions = document.querySelector(".definitions");
+let thesaurus = document.querySelector(".syn-ant");
+
 const button = document.querySelector(".button");
+const button2 = document.querySelector(".button2");
 
 //------TEST CODE DELETE LATER----------
 // button.addEventListener("click", async () => {
@@ -68,7 +72,7 @@ button.addEventListener("click", async () => {
   });
   let word = response.data.word;
   
-  SearchWord.innerHTML = word;
+  theWord.innerHTML = word;
   console.log(response);
 
   definitions.innerHTML = ""; //This allows the search function to be used more than once
@@ -78,7 +82,7 @@ button.addEventListener("click", async () => {
   
   definitions.appendChild(title);
   
-  for (i = 0; i <= response.data.definitions.length; i++){
+  for (i = 0; i < response.data.definitions.length; i++){
     let item = document.createElement("div");
     item.className = "defines";
     item.innerHTML = `${i+1}) ` + response.data.definitions[i].definition;
@@ -90,8 +94,44 @@ button.addEventListener("click", async () => {
 
 
 });
-//------------------------------------------------------------------//
+//----------------------------THESAURUS--------------------------------------//
+button2.addEventListener("click", async () => {
+  const input = document.querySelector(".thesaurus-search").value;
+  console.log(input);
 
+  const response = await axios({
+    method: "GET",
+    url: `https://wordsapiv1.p.rapidapi.com/words/${input}/synonyms`,
+    headers: {
+      "content-type": "application/octet-stream",
+      "x-rapidapi-host": "wordsapiv1.p.rapidapi.com",
+      "x-rapidapi-key": "1213f19772msha8236f6e8356a42p1f62d3jsndb481029ea07"
+    } ,
+    params: {
+      hasDetails: "synonyms"
+    }
+  });
+  let word = response.data.word;
+  
+  theWord.innerHTML = word;
+  console.log(response);
+
+  thesaurus.innerHTML = ""; //This allows the search function to be used more than once
+  let title = document.createElement("h2");
+  title.innerHTML = "Synonyms";
+  title.className = "title";
+  
+  thesaurus.appendChild(title);
+  
+  for (i = 0; i < response.data.synonyms.length; i++){
+    let item = document.createElement("div");
+    item.className = "syns";
+    item.innerHTML = `${i+1}) ` + response.data.synonyms[i];
+    thesaurus.appendChild(item);
+  // shows definitions along with numbered list, for clarity
+  }
+  
+});
 
 /// Code to get list
 // - list ConvolverNod
