@@ -154,6 +154,7 @@ width:30%;
 .definitions {
   margin-top: 5%;
   margin-left: 10%;
+  margin-bottom: 5%;
   list-style-type: none;
   text-decoration: none;
   text-transform: capitalize;
@@ -175,6 +176,14 @@ width:30%;
   line-height: 2em;
   font-size: 1em;
 }
+
+.imgbreak{
+    background-image: url("books.jpg");
+    width: 100%;
+    opacity: 0.2;
+    height: 35vh;
+    background-attachment: fixed;
+  }
 
 .thesaurus-container{
   display:flex;
@@ -226,15 +235,28 @@ width:30%;
 }
 
 .syn-ant{
+  margin-top: 5%;
+  margin-left: 10%;
+  list-style-type: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  line-height: 1em;
+  background-color: #f4f3ef;
+  margin-right: 10%;
+  box-shadow: 10px 10px 20px #828077;
+  color: black;
+  transition: width 0.2s height 0.2s;
+}
+.syns{
   margin: 3em;
   line-height: 2em;
   font-size: 1em;
 }
 
 footer {
+  margin-top:20vh;
   display: flex;
   justify-content: center;
-  margin-top: 100vh;
   background-color: #828077;
   height: 18vh;
   text-align: center;
@@ -244,6 +266,7 @@ footer {
 footer h2 {
   color: white;
   text-align: center;
+  opacity: 1;
 }
 
 /* SPLASHSCREEN CSS */
