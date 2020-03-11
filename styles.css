@@ -114,7 +114,7 @@ nav a:hover {
 width:30%;
 }
 
-#body-container button {
+/* #body-container button {
   width: 10%;
   height: 40%;
   margin-top: 5vh;
@@ -122,7 +122,16 @@ width:30%;
   color: white;
   padding: 1em;
   font-family: "Montserrat", sans-serif;
+} */
 
+#defBut{
+  width: 10%;
+  height: 40%;
+  margin-top: 5vh;
+  background-color: #f44336;
+  color: white;
+  padding: 1em;
+  font-family: "Montserrat", sans-serif;
 }
 
 #body-container button:hover {
@@ -167,6 +176,40 @@ width:30%;
   font-size: 1em;
 }
 
+.thesaurus-container{
+  display:flex;
+  width:100%;
+  justify-content: center;
+  align-items: center;
+  margin:0;
+}
+
+.thesaurus-container input{
+  width: 20%;
+  height: 60%;
+  padding: 1em;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  transition: width 0.3s;
+}
+
+#thebutton {
+  width: 10%;
+  height: 40%;
+  background-color: #f44336;
+  color: white;
+  padding: 1em;
+  font-family: "Montserrat", sans-serif;
+}
+
+.thesaurus-container button:hover {
+  background-color:#5b9756;
+  color: white;
+}
+
+.thesaurus-container button:focus {
+  outline: 0;
+}
 
 footer {
   display: flex;
