@@ -50,7 +50,7 @@ nav a {
   font-weight: 25;
   border: 2px;
   border-color: transparent;
-  transition: background-color 0.3s;
+  transition: background-color 0.4s;
 }
 
 nav a:hover {
@@ -166,6 +166,7 @@ width:30%;
   line-height: 2em;
   font-size: 1em;
 }
+
 
 footer {
   display: flex;
