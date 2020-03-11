@@ -72,7 +72,7 @@ button.addEventListener("click", async () => {
   });
   let word = response.data.word;
   
-  theWord.innerHTML = word;
+  SearchWord.innerHTML = word;
   console.log(response);
 
   definitions.innerHTML = ""; //This allows the search function to be used more than once
