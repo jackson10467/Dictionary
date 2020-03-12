@@ -1,5 +1,5 @@
 const apiKey = "1213f19772msha8236f6e8356a42p1f62d3jsndb481029ea07";
-//API KEY, pls no bully the key
+//API KEY, pls no bully the key, i only have 2500 requests a day
 
 let SearchWord = document.querySelector(".word"); // Word to be searched
 let theWord = document.querySelector(".TheWord") // Thesaurus word
@@ -27,14 +27,15 @@ const wordDay = async () => {
       hasDetails: "definitions"
     }
   }); // Code block base code from RapidAPI + WordAPI documentation params
+  // this searches for a random word that has a definition
+  // Many words in the words API actually don't have a definition or are random words
 
   let word = wotdData.data.word;
-  wotd.innerHTML = word + ":";
+  wotd.innerHTML = word + ":"; //Shows the word 
 
   let wordData = wotdData.data.results[0].definition;
-  console.log(wotdData);
 
-  wotdInfo.innerHTML = wordData;
+  wotdInfo.innerHTML = wordData;//Shows the definition of the word 
 };
 //------------UNCOMMENT OUT WHEN READY, SAVES API CALLS----------------------
 
@@ -55,12 +56,14 @@ button.addEventListener("click", async () => {
   let word = response.data.word;
   
   SearchWord.innerHTML = word;
-  console.log(response);
+
 
   definitions.innerHTML = ""; //This allows the search function to be used more than once
-  let title = document.createElement("h2");
+  
+  let title = document.createElement("h2");//---
   title.innerHTML = "Definitions";
-  title.className = "title";
+  title.className = "title"; //----- this block adds the title "Definitions to the 
+  
   
   definitions.appendChild(title);
   
@@ -69,7 +72,9 @@ button.addEventListener("click", async () => {
     item.className = "defines";
     item.innerHTML = `${i+1}) ` + response.data.definitions[i].definition;
     definitions.appendChild(item);
-  // shows definitions along with numbered list, for clarity
+    // creates a div, gives it a class,
+    // shows definitions along with numbered list, for clarity
+    // Appends that div to the page
   }
   
 
@@ -79,7 +84,7 @@ button.addEventListener("click", async () => {
 //----------------------------THESAURUS--------------------------------------//
 button2.addEventListener("click", async () => {
   const input = document.querySelector(".thesaurus-search").value;
-  console.log(input);
+  //gets input from the input box with thesaurus  
 
   const response = await axios({
     method: "GET",
@@ -94,15 +99,16 @@ button2.addEventListener("click", async () => {
     }
   }); // Code block base code from RapidAPI + WordAPI documentation param
   let word = response.data.word;
-  
+  // returns the word
   theWord.innerHTML = word;
-  console.log(response);
+  //shows the word
 
   thesaurus.innerHTML = ""; //This allows the search function to be used more than once
   let title = document.createElement("h2");
   title.innerHTML = "Synonyms";
   title.className = "title";
-  
+  // Shows "Synonyms" on the page
+
   thesaurus.appendChild(title);
   
   for (i = 0; i < response.data.synonyms.length; i++){
@@ -111,6 +117,7 @@ button2.addEventListener("click", async () => {
     item.innerHTML =  response.data.synonyms[i];
     thesaurus.appendChild(item);
   // shows definitions along with numbered list, for clarity
+    // Creates divs similar to previous function
   }
   
 });
