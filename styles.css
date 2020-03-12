@@ -350,6 +350,17 @@ footer h2 {
   #body-container input:focus {
     width: 80%;
   }
+  
+  .thesaurus-container{
+    flex-direction: column;
+  }
+  #thebutton{
+    margin-top:5vh;
+  }
+
+  .syn-ant{
+    min-width: 70vw;
+  }
   footer {
     height: 25vh;
   }
