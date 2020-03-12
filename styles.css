@@ -328,10 +328,16 @@ footer h2 {
 /* MEDIA QUERY */
 @media only screen and (max-width: 600px) {
   #wotd-text {
-    margin-left: 5%;
+    margin-left: 8%;
+    font-size: 1.2em;
   }
+  
   nav a {
-    font-size: 0.5em;
+    font-size: 0.8em;
+    margin:0;
+  }
+  nav img{
+    display: none;
   }
   #body-container button {
     width: 20%;
@@ -362,12 +368,73 @@ footer h2 {
     min-width: 70vw;
   }
   footer {
-    height: 25vh;
+    height: 30vh;
   }
 
   footer h2 {
     color: white;
     text-align: center;
-    margin-bottom: 15%;
+    margin-bottom: 35%;
   }
+}
+
+  
+  /* MEDIA QUERY TABLETS */
+@media only screen and (min-width: 768px) {
+  #wotd{
+  height:80vh;
+  margin-top:0;
+  }
+    
+  #wotd-text {
+    margin-top:0;  
+    margin-left: 4%;
+    font-size: 1.5em;
+    }
+    nav a {
+      font-size: 1.3em;
+    }
+    nav img{
+      max-height:85px;
+      max-width:85px;
+    }
+    #body-container button {
+      width: 20%;
+      height: 40%;
+      font-size: 1.2em;
+    }
+  
+    #body-container input {
+      width: 70%;
+      height: 60%;
+      padding: 1em;
+      margin: 2vh;
+      font-family: "Montserrat", sans-serif;
+      text-align: center;
+      font-size: 1.2em;
+    }
+  
+    #body-container input:focus {
+      width: 80%;
+    }
+    
+    .thesaurus-container{
+      flex-direction: column;
+    }
+    #thebutton{
+      margin-top:5vh;
+    }
+  
+    .syn-ant{
+      min-width: 70vw;
+    }
+    footer {
+      height: 25vh;
+    }
+  
+    footer h2 {
+      color: white;
+      text-align: center;
+      margin-bottom: 0%;
+}
 }
