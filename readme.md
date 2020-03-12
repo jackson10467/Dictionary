@@ -20,5 +20,8 @@ Splashscreen:
 ![Splashscreen](https://i.imgur.com/u8uQcrk.jpg)
 Desktop:
 ![Desktop](https://i.imgur.com/YV1jYSc.jpg)
-Mobile:
-![Mobile](https://imgur.com/Vd54Jdv.jpg)
+<!-- Mobile:
+![Mobile](https://imgur.com/Vd54Jdv.jpg) -->
+<p align="center">
+  <img src ="https://imgur.com/Vd54Jdv.jpg"/>
+</p>
