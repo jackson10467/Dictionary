@@ -5,52 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script defer src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script defer src="script.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    
-    <title>Dictionary/+</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat|Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  <body onload="wordDay()">
-<div id="body-container">
-  <div id = "wotd">
-  </div>    
-  <div id= "wotd-text">
-    <h2 class = "wotd"></h2>
-    <h3 class="wotd-info"></h3>
-  </div>  
-      <div id="Dictionary"></div>  
-      <!-- Empty div for cleaner href, without this it scrolls to
-      the input for some reason -->
-      <h1>Define a Word:</h1>
-      <input type="text" id="input" placeholder="Search here"></input>
-      <button id ="defBut" class="button">Submit</button>
-    <div class="word"></div>
-    <div class="definitions"></div>
-    
-    <div class="imgbreak"></div>    
-      <div id="thesaurus"></div>
-    <h1>Thesaurus:</h1>
-    <div class="thesaurus-container">
-      <input type="text" id="input2" class="thesaurus-search" placeholder="Thesaurus Search"></input>
-      <button id="thebutton" class="button2">Submit</button>
+  <body>
+    <div class="splashContainer">
     </div>
-        <div class="TheWord"></div>
-        <div class="syn-ant"></div>
-    <!-- Header on bottom because it breaks when on top -->
-    <header>
-      <nav>
-        <a href="index.html"><img src="logo.png" alt="logo"/></a>
-        <a href=#Dictionary>Dictionary</a>
-        <a href=#thesaurus>Thesaurus</a>
-        <a onClick="wordDay()" href=#wotd>Random Term</a>
-        <a href="http://www.google.com/search?q=Library+Locations">Library</a>
-      </nav>
-    </header>
-
-  </div>
-
-  <footer>
-    <h2>Jackson Vu &copy; 2020</h2>
-  </footer>
+    <div class="centered">
+      <h1>Dictionary</h1>
+      <button id="splashbut" onclick="window.location.href = 'index2.html'">
+        ENTER
+      </button>
+    </div>
   </body>
 </html>
