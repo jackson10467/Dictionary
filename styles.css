@@ -46,7 +46,7 @@ nav a {
   background-color: #929a97;
   text-align: center;
   padding: 10px 10px;
-  font-size: 1.25em;
+  font-size: 1.1em;
   text-transform: uppercase;
   font-weight: 25;
   border: 2px;
@@ -114,16 +114,6 @@ nav a:hover {
 #body-container input:focus {
   width: 30%;
 }
-
-/* #body-container button {
-  width: 10%;
-  height: 40%;
-  margin-top: 5vh;
-  background-color: #f44336;
-  color: white;
-  padding: 1em;
-  font-family: "Montserrat", sans-serif;
-} */
 
 #defBut {
   width: 10%;
@@ -369,7 +359,7 @@ footer h2 {
     min-width: 70vw;
   }
   footer {
-    height: 15vh;
+    height: 25vh;
   }
 
   footer h2 {
@@ -380,7 +370,7 @@ footer h2 {
 }
 
 /* MEDIA QUERY TABLETS */
-/* @media only screen and (min-width: 768px){
+@media (min-width: 768px) and (max-width:968px){
   #wotd {
     height: 80vh;
     margin-top: 0;
@@ -437,7 +427,7 @@ footer h2 {
     text-align: center;
     margin-bottom: 0%;
   }
-} */
+}
 
 /* @media only screen and (min-width: 992px){
   #wotd {

@@ -8,25 +8,6 @@ let thesaurus = document.querySelector(".syn-ant");
 const button = document.querySelector(".button");
 const button2 = document.querySelector(".button2");
 
-//------TEST CODE DELETE LATER----------
-// button.addEventListener("click", async () => {
-//   const response = await axios({
-//     "method": "GET",
-//     "url": "https://wordsapiv1.p.rapidapi.com/words/",
-//     "headers": {
-//       "content-type": "application/octet-stream",
-//       "x-rapidapi-host": "wordsapiv1.p.rapidapi.com",
-//       "x-rapidapi-key": "1213f19772msha8236f6e8356a42p1f62d3jsndb481029ea07"
-//     },
-//     "params": {
-//       "random": "true",
-//       "lettersMax": "4"
-//     }
-//   })
-//     // how would i translate this back to the simple "axios.get(URL, {header}"?
-//     console.log(response);
-// })//RapidAPI gave me this code block ) =
-
 //--------------RANDOM WORD FUNCTION-------------
 const wordDay = async () => {
   let wotd = document.querySelector(".wotd");
@@ -44,7 +25,7 @@ const wordDay = async () => {
       random: "true",
       hasDetails: "definitions"
     }
-  });
+  }); // Code block base code from RapidAPI + WordAPI documentation
 
   let word = wotdData.data.word;
   wotd.innerHTML = word + ":";
@@ -68,7 +49,7 @@ button.addEventListener("click", async () => {
       "content-type": "application/octet-stream",
       "x-rapidapi-host": "wordsapiv1.p.rapidapi.com",
       "x-rapidapi-key": "1213f19772msha8236f6e8356a42p1f62d3jsndb481029ea07"
-    }
+    } // Code block base code from RapidAPI + WordAPI documentation
   });
   let word = response.data.word;
   
@@ -110,7 +91,7 @@ button2.addEventListener("click", async () => {
     params: {
       hasDetails: "synonyms"
     }
-  });
+  }); // Code block base code from RapidAPI + WordAPI documentation
   let word = response.data.word;
   
   theWord.innerHTML = word;
@@ -132,8 +113,3 @@ button2.addEventListener("click", async () => {
   }
   
 });
-
-/// Code to get list
-// - list ConvolverNod
-// hound
-// 
