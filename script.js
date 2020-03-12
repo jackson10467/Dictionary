@@ -1,17 +1,18 @@
 const apiKey = "1213f19772msha8236f6e8356a42p1f62d3jsndb481029ea07";
+//API KEY, pls no bully the key
 
-let SearchWord = document.querySelector(".word");
-let theWord = document.querySelector(".TheWord")
-let definitions = document.querySelector(".definitions");
-let thesaurus = document.querySelector(".syn-ant");
+let SearchWord = document.querySelector(".word"); // Word to be searched
+let theWord = document.querySelector(".TheWord") // Thesaurus word
+let definitions = document.querySelector(".definitions"); //Returned definitions
+let thesaurus = document.querySelector(".syn-ant"); //Returned thesaurus results
 
-const button = document.querySelector(".button");
-const button2 = document.querySelector(".button2");
+const button = document.querySelector(".button"); //First button
+const button2 = document.querySelector(".button2");//second button
 
 //--------------RANDOM WORD FUNCTION-------------
 const wordDay = async () => {
-  let wotd = document.querySelector(".wotd");
-  let wotdInfo = document.querySelector(".wotd-info");
+  let wotd = document.querySelector(".wotd"); //wordoftheday
+  let wotdInfo = document.querySelector(".wotd-info"); //textinwotd
 
   let wotdData = await axios({
     method: "GET",
@@ -25,7 +26,7 @@ const wordDay = async () => {
       random: "true",
       hasDetails: "definitions"
     }
-  }); // Code block base code from RapidAPI + WordAPI documentation
+  }); // Code block base code from RapidAPI + WordAPI documentation params
 
   let word = wotdData.data.word;
   wotd.innerHTML = word + ":";
@@ -91,7 +92,7 @@ button2.addEventListener("click", async () => {
     params: {
       hasDetails: "synonyms"
     }
-  }); // Code block base code from RapidAPI + WordAPI documentation
+  }); // Code block base code from RapidAPI + WordAPI documentation param
   let word = response.data.word;
   
   theWord.innerHTML = word;

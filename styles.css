@@ -62,10 +62,10 @@ nav a:hover {
 }
 
 #wotd {
-  background-image: url("books.jpg");
+  background-image: url("rsz_shelf.png");
   width: 100%;
   opacity: 0.2;
-  height: 90vh;
+  height: 100vh;
   background-attachment: fixed;
 }
 
@@ -168,11 +168,13 @@ nav a:hover {
 }
 
 .imgbreak {
-  background-image: url("books.jpg");
+  background-image: url("stock.jpg");
+  background-repeat: no-repeat;
   width: 100%;
   opacity: 0.2;
-  height: 35vh;
+  height: 55vh;
   background-attachment: fixed;
+  background-size: cover;
 }
 
 .thesaurus-container {
@@ -256,7 +258,7 @@ footer h2 {
 
 /* SPLASHSCREEN CSS */
 
-/* Centering Code from W3 schools, adapated for the this project */
+/* Centering Code from W3 schools, adapated and edited for this project */
 .splashContainer {
   text-align: center;
   color: white;
@@ -273,7 +275,8 @@ footer h2 {
   left: 50%;
   transform: translate(-50%, -50%);
   opacity: 1;
-}
+}/* } this base CSS is used for other elements throughout the page*/
+/* Specifically those beneath this comment and anywhere else that uses -50% translate */
 
 #wotdHead {
   position: absolute;
@@ -358,6 +361,9 @@ footer h2 {
   .syn-ant {
     min-width: 70vw;
   }
+  .imgbreak{
+    height:30vh;
+  }
   footer {
     height: 25vh;
   }
@@ -380,6 +386,7 @@ footer h2 {
     margin-top: 0;
     margin-left: 4%;
     font-size: 1.5em;
+    background-color:green;
   }
   nav a {
     font-size: 1.3em;
